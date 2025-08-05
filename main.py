@@ -7,6 +7,8 @@ from data_loaders import activity_rates
 from config import well_parameters
 import math
 
+print(well_parameters)
+
 def main():
     # You can create a parameters dictionary or use directly from config
 
@@ -24,5 +26,8 @@ def main():
     df_plan.to_excel("Subsea_Well_Plan1.xlsx", index=False)
 
 if __name__ == "__main__":
+    print(well_parameters['jetting_conductor'])
     main()
+
+    
  

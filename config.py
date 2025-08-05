@@ -12,7 +12,7 @@ intermediate_casing_depth = 3118
 production_casing_depth = 3925
 well_td = 5025
 coring_depths = [2915, 3635, 4275, 4925]
-jetting_conductor = True
+jetting_conductor = False
 pilot_hole = True
 include_intermediate_casing = True
 include_liner_casing = True
@@ -82,7 +82,7 @@ bottoms_up_17_5_in = riser_annulus_vol + OH_annulus_vol_17_5_in*(intermediate_ca
 bottoms_up_12_25_in = riser_annulus_vol+ OH_annulus_vol_12_25_in*(production_casing_depth-intermediate_casing_depth) + casing_annulus_vol_13_3_8_in*(intermediate_casing_depth-water_depth)
 bottoms_up_8_5_in = riser_annulus_vol + OH_annulus_vol_8_5_in*(well_td-production_casing_depth) + casing_annulus_vol_9_5_8_in*(production_casing_depth-water_depth)
 
-
+print(jetting_conductor, 'Jetting_conductor')
     
     
 well_parameters = {
@@ -115,4 +115,5 @@ well_parameters = {
 
     }
 
-#print(well_parameters)
+
+print(well_parameters)
