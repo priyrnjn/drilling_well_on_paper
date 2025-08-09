@@ -1,21 +1,21 @@
 
 import math
 # Constants
-previous_well_water_depth = 2820 # in meters
+previous_well_water_depth = 2125 # in meters
 sailing = 280 #NM
-water_depth_msl = 2090 #MSL
+water_depth_msl = 1040 #MSL
 air_gap = 25
 conductor_casing_bml = 80
-surface_casing_bml = 630
+surface_casing_bml = 400
 pipe_od_in = 5.5  # in inches
-intermediate_casing_depth = 3118
-production_casing_depth = 3925
-well_td = 5025
-coring_depths = [2915, 3635, 4275, 4925]
-jetting_conductor = False
-pilot_hole = True
+intermediate_casing_depth = 1500
+production_casing_depth = 1800
+well_td = 1800
+coring_depths = [1600]
+jetting_conductor = True
+pilot_hole = False
 include_intermediate_casing = True
-include_liner_casing = True
+include_liner_casing = False
 
 logging_days_intermediate = 3
 logging_days_production = 8

@@ -49,7 +49,7 @@ else:
 
 # Initialize Coring Depths in Session State
 if 'coring_depths' not in st.session_state:
-    st.session_state.coring_depths = [2915, 3635, 4275, 4925]  # Default values
+    st.session_state.coring_depths = [well_td-200]  # Default values
 st.sidebar.header("Coring Depths Configuration")
 # Buttons to Add/Remove Depths
 add_depth = st.sidebar.button("➕ Add Coring Depth")
