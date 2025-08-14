@@ -3,22 +3,22 @@ import math
 # Constants
 previous_well_water_depth = 2125 # in meters
 sailing = 280 #NM
-water_depth_msl = 1040 #MSL
+water_depth_msl = 2070 #MSL
 air_gap = 25
 conductor_casing_bml = 80
-surface_casing_bml = 400
+surface_casing_bml = 620
 pipe_od_in = 5.5  # in inches
-intermediate_casing_depth = 1500
-production_casing_depth = 1800
-well_td = 1800
-coring_depths = [1600]
-jetting_conductor = True
-pilot_hole = False
+intermediate_casing_depth = 3125
+production_casing_depth = 3925
+well_td = 5025
+coring_depths = [2915, 3635, 4275, 4925]
+jetting_conductor = False
+pilot_hole = True
 include_intermediate_casing = True
-include_liner_casing = False
+include_liner_casing = True
 
 logging_days_intermediate = 3
-logging_days_production = 8
+logging_days_production = 5
 logging_days_liner = 8
 
 water_depth = water_depth_msl + air_gap
@@ -38,10 +38,10 @@ riser_jts_previous_well = math.ceil(previous_well_water_depth / 27.4)  # 27.4 m 
 riser_jts = math.ceil(water_depth / 27.4) 
 
 #Coring Depths:
-coring_depth_1 = 2915
-coring_depth_2 = 3635  
-coring_depth_3 = 4275
-coring_depth_4 = 4925
+#coring_depth_1 = 2915
+#coring_depth_2 = 3635  
+#coring_depth_3 = 4275
+#coring_depth_4 = 4925
 
 
 string_closed_disp = 0.0964    # bbl/m

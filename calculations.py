@@ -1,5 +1,7 @@
 import math
-from config import string_closed_disp, water_depth, string_capacity, riser_annulus_vol
+from config import string_closed_disp, water_depth, string_capacity, riser_annulus_vol, bottoms_up_12_25_in
+from data_loaders import activity_rates
+from config import *
 
 
 def hole_volume_bbl_per_m(diameter_in_inches):
@@ -84,7 +86,10 @@ def coring_time(bit_depth, shoe_depth, hole_size, bottoms_up_12_25_in, activity_
     print(f"Coring_time: {coring_time_1: .2f} hours")
 
     return 1/(circulation_time + roundtrip_for_BHA + coring_trip_total_time)
+
 #from config import *
 #from data_loaders import activity_rates
 #coring_time(3900, 3200, 12.25, bottoms_up_12_25_in, activity_rates, pipe_od_in, core_no=1, core_length=9)
+#print(1/coring_time(2903, 2718, 12.25, bottoms_up_12_25_in, activity_rates, 5.5))
 
+print(1/round_trip(2903,2718,12.25,string_closed_disp,water_depth,string_capacity,riser_annulus_vol,activity_rates))
