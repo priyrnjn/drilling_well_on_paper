@@ -51,7 +51,7 @@ def wiper_trip_riserless(bit_depth, shoe_depth, hole_size, string_closed_disp, w
 def round_trip(bit_depth, shoe_depth, hole_size, string_closed_disp, water_depth, string_capacity, riser_annulus_vol, activity_rates):
     tripping_time_above_shoe = shoe_depth*2 / activity_rates['Tripping'] 
     print(f"Tripping time above shoe: {tripping_time_above_shoe:.2f} hours")
-    wiper_trip_time = wiper_trip(bit_depth, shoe_depth, hole_size, string_closed_disp, water_depth, string_capacity, riser_annulus_vol, activity_rates)  
+    wiper_trip_time = 1/wiper_trip(bit_depth, shoe_depth, hole_size, string_closed_disp, water_depth, string_capacity, riser_annulus_vol, activity_rates)  
     print(f"Wiper trip time: {wiper_trip_time:.2f} hours")    
     return 1/(tripping_time_above_shoe + wiper_trip_time)
 def run_and_retrieve_WB(activity_rates, water_depth):

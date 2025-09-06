@@ -18,7 +18,7 @@ def main():
 
     # Create DrillingOperation
     operation = DrillingOperation("Subsea Well Plan", phases)
-
+    
     # Display the Plan
     df_plan = operation.display_plan()
 
